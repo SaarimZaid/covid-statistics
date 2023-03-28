@@ -38,7 +38,7 @@ app.get('/totalactive', async (req,res)=>{
         for (i = 0; i < data.length; i++) {
             infected += data[i].infected
         }
-        // console.log(infected)
+        console.log(infected)
         res.status(200).json({
             data: { _id: "infected", infected: infected },
 
